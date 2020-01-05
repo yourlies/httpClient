@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "name": "Win32",
+      "includePath": ["${workspaceFolder}/**"],
+      "compilerPath": "C:\\mingw-w64\\mingw64\\bin\\gcc.exe",
+      "defines": ["_DEBUG", "UNICODE", "_UNICODE"],
+      "browse": {
+        "path": ["${workspaceRoot}/**"]
+      }
+    }
+  ],
+  "version": 4
+}

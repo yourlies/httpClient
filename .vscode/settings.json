@@ -1,0 +1,12 @@
+{
+  "files.associations": {
+    "time.h": "c",
+    "types.h": "c",
+    "winsock2.h": "c",
+    "windows.h": "c",
+    "ws2tcpip.h": "c",
+    "winsock.h": "c",
+    "string.h": "c",
+    "socket.h": "c"
+  }
+}
