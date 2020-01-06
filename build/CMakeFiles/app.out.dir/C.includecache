@@ -7,16 +7,6 @@
 #IncludeRegexTransform: 
 
 /Users/lies/Documents/lies/c/httpClient/http.c
-fcntl.h
--
-unistd.h
--
-stdio.h
--
-stdlib.h
--
-string.h
--
 ws2tcpip.h
 -
 winsock2.h
@@ -26,5 +16,15 @@ netinet/in.h
 arpa/inet.h
 -
 sys/socket.h
+-
+fcntl.h
+-
+unistd.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
 -
 

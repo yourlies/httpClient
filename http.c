@@ -22,7 +22,7 @@ int main(void)
   struct sockaddr_in servaddr;
   fd_set t_set1;
   socklen_t len;
-  char str1[4096], str2[4096], buf[BUFSIZE], *str;
+  char str[4096], buf[BUFSIZE];
   // 创建套接字
   int sockfd = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
   // 设置请求地址信息
@@ -32,24 +32,16 @@ int main(void)
   servaddr.sin_addr.s_addr = inet_addr(IPSTR);
   // 创建连接
   connect(sockfd, (struct sockaddr *)&servaddr, sizeof(servaddr));
-  // 设置请求参数
-  memset(str2, 0, 4096);
-  strcat(str2, "?username=tom&password=111111");
-  str = (char *)malloc(128);
-  len = strlen(str2);
-  sprintf(str, "%d", len);
-  // 设置http报文
-  memset(str1, 0, 4096);
-  strcat(str1, "GET /index.html?username=tom&password=111111 HTTP/1.1\n");
-  strcat(str1, "Host: 127.0.0.1\n");
-  strcat(str1, "Content-Type: text/html\n");
-  strcat(str1, "Content-Length: ");
-  strcat(str1, str);
-  strcat(str1, "\n\n");
-  strcat(str1, "\r\n\r\n");
-  printf("%s\n", str1);
+  // 设置请求报文
+  memset(str, 0, 4096);
+  strcat(str, "GET /index.html?username=tom&password=111111 HTTP/1.1\n");
+  strcat(str, "Host: 127.0.0.1\n");
+  strcat(str, "Content-Type: text/html\n");
+  strcat(str, "\n\n");
+  strcat(str, "\r\n\r\n");
+  printf("%s\n", str);
   // 接受响应报文
-  ret = send(sockfd, str1, strlen(str1), 0);
+  ret = send(sockfd, str, strlen(str), 0);
   FD_ZERO(&t_set1);
   FD_SET(sockfd, &t_set1);
   memset(buf, 0, sizeof(buf));
