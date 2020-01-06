@@ -1,0 +1,3 @@
+/Users/lies/Documents/lies/c/httpClient/build/CMakeFiles/rebuild_cache.dir
+/Users/lies/Documents/lies/c/httpClient/build/CMakeFiles/edit_cache.dir
+/Users/lies/Documents/lies/c/httpClient/build/CMakeFiles/app.out.dir

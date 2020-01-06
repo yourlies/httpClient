@@ -7,6 +7,14 @@
     "ws2tcpip.h": "c",
     "winsock.h": "c",
     "string.h": "c",
-    "socket.h": "c"
+    "socket.h": "c",
+    "type_traits": "c",
+    "errno.h": "c",
+    "unistd.h": "c",
+    "cstdio": "c",
+    "in.h": "c",
+    "stdio.h": "c",
+    "inet.h": "c",
+    "cstdlib": "c"
   }
 }

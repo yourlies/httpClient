@@ -1,0 +1,1 @@
+cmake ./build && cd ./build && make && cd ..&& mv ./build/app.out ./ && ./app.out && rm ./app.out
