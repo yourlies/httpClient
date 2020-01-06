@@ -4,6 +4,7 @@
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <arpa/inet.h>
+#include <sys/wait.h>
 
 int main()
 {
@@ -23,6 +24,7 @@ int main()
     char buf = 0;
     recvfrom(sockfd, &buf, sizeof(buf), 0, (struct sockaddr *)&cli, &len);
     printf("recv num =%c\n", buf);
+    sleep(5);
     buf = 66;
     sendto(sockfd, &buf, sizeof(buf), 0, (struct sockaddr *)&cli, len);
   }
