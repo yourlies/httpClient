@@ -1,8 +1,3 @@
-#include <fcntl.h>
-#include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #ifdef __WIN32__
 #include <ws2tcpip.h>
 #include <winsock2.h>
@@ -11,6 +6,11 @@
 #include <arpa/inet.h>
 #include <sys/socket.h>
 #endif
+#include <fcntl.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 #define IPSTR "127.0.0.1"
 #define PORT 8080

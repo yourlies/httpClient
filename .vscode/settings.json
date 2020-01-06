@@ -15,6 +15,7 @@
     "in.h": "c",
     "stdio.h": "c",
     "inet.h": "c",
-    "cstdlib": "c"
+    "cstdlib": "c",
+    "fcntl.h": "c"
   }
 }
